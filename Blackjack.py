@@ -8,3 +8,14 @@
 
 Count, M = map(int, input().split(' '))
 N = list(map(int,input().split(' ')))
+
+res=0
+for i in range(0,Count-2):
+    for j in range(i+1, Count-1):
+        for k in range(j+1, Count):
+            if N[i] + N[j] + N[k] > M:
+                continue
+            else:
+                res = max(res, N[i] + N[j] + N[k])
+
+print(res)
