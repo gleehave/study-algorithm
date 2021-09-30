@@ -12,3 +12,4 @@ https://www.acmicpc.net/step
 ## Try
 
 [블랙잭]https://www.acmicpc.net/problem/2798
+[분해합]https://www.acmicpc.net/problem/2231
