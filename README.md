@@ -8,3 +8,7 @@
 백준의 알고리즘 유형을 풀어본다.
 https://www.acmicpc.net/step 
 "단계별로 풀어보기" 에 해당하는 문제를 우선으로 한다.
+
+## Try
+
+[블랙잭]https://www.acmicpc.net/problem/2798
