@@ -9,7 +9,7 @@
 https://www.acmicpc.net/step 
 "단계별로 풀어보기" 에 해당하는 문제를 우선으로 한다.
 
-## Try
+## Problem
 
 [블랙잭]https://www.acmicpc.net/problem/2798
 [분해합]https://www.acmicpc.net/problem/2231
