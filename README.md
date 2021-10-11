@@ -20,3 +20,6 @@ https://www.acmicpc.net/step
 /Stack
 [스택] https://www.acmicpc.net/step/11
 [괄호]https://www.acmicpc.net/problem/9012
+
+/DynamicProgramming
+[가장긴바이토닉부분수열] https://www.acmicpc.net/problem/11054
