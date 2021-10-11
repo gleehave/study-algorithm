@@ -24,3 +24,4 @@ https://www.acmicpc.net/step
 /DynamicProgramming <br>
 - <참고자료> https://galid1.tistory.com/507 <br>
 - [가장긴바이토닉부분수열] https://www.acmicpc.net/problem/11054 <br>
+- [정수삼각형] https://www.acmicpc.net/problem/1932 <br>
