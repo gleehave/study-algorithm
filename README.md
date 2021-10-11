@@ -18,9 +18,9 @@ https://www.acmicpc.net/step
 - [체스판칠하기] https://www.acmicpc.net/problem/1018 <br>
 
 /Stack <br>
-[스택] https://www.acmicpc.net/step/11 <br>
-[괄호]https://www.acmicpc.net/problem/9012 <br>
+- [스택] https://www.acmicpc.net/step/11 <br>
+- [괄호]https://www.acmicpc.net/problem/9012 <br>
 
 /DynamicProgramming <br>
-<참고자료> https://galid1.tistory.com/507 <br>
-[가장긴바이토닉부분수열] https://www.acmicpc.net/problem/11054 <br>
+- <참고자료> https://galid1.tistory.com/507 <br>
+- [가장긴바이토닉부분수열] https://www.acmicpc.net/problem/11054 <br>
