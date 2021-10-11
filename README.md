@@ -12,15 +12,15 @@ https://www.acmicpc.net/step
 ## Problem
 
 /Bruteforce
-[블랙잭]https://www.acmicpc.net/problem/2798
-[분해합]https://www.acmicpc.net/problem/2231
-[덩치] https://www.acmicpc.net/problem/7568
-[체스판칠하기] https://www.acmicpc.net/problem/1018
+[블랙잭]https://www.acmicpc.net/problem/2798 <br>
+[분해합]https://www.acmicpc.net/problem/2231 <br>
+[덩치] https://www.acmicpc.net/problem/7568 <br>
+[체스판칠하기] https://www.acmicpc.net/problem/1018 <br>
 
 /Stack
-[스택] https://www.acmicpc.net/step/11
-[괄호]https://www.acmicpc.net/problem/9012
+[스택] https://www.acmicpc.net/step/11 <br>
+[괄호]https://www.acmicpc.net/problem/9012 <br>
 
 /DynamicProgramming
-<참고자료> https://galid1.tistory.com/507
-[가장긴바이토닉부분수열] https://www.acmicpc.net/problem/11054
+<참고자료> https://galid1.tistory.com/507 <br>
+[가장긴바이토닉부분수열] https://www.acmicpc.net/problem/11054 <br>
