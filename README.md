@@ -22,4 +22,5 @@ https://www.acmicpc.net/step
 [괄호]https://www.acmicpc.net/problem/9012
 
 /DynamicProgramming
+<참고자료> https://galid1.tistory.com/507
 [가장긴바이토닉부분수열] https://www.acmicpc.net/problem/11054
