@@ -9,61 +9,61 @@
 
 def push_front(queue, Value):
     queue.insert(0, Value)
-    print('queue: ',queue)
+    #print('queue: ',queue)
     return queue
 
 def push_back(queue, Value):
     queue.append(Value)
-    print('queue: ',queue)    
+    #print('queue: ',queue)    
     return queue
 
 def pop_front(queue):
     if len(queue) == 0 :
         print(-1)
-        print('queue: ',queue)
+        #print('queue: ',queue)
         return queue
     else: 
         print(queue[0])
         queue.pop(0)
-        print('queue: ',queue)       
+        #print('queue: ',queue)       
         return queue
     
 def pop_back(queue):
     if len(queue) == 0 :
         print(-1)
-        print('queue: ',queue)
+        #print('queue: ',queue)
         return queue
     else: 
         print(queue[-1])
         queue.pop(-1)
-        print('queue: ',queue)
+        #print('queue: ',queue)
         return queue
 
 def size(queue):
     print(len(queue))
-    print('queue: ',queue)
+    #print('queue: ',queue)
     
 def empty(queue):
     if len(queue) == 0:
         print(1)
-        print('queue: ',queue)
-    else: print(0); print('queue: ',queue)
+        #print('queue: ',queue)
+    else: print(0) #print('queue: ',queue)
 
 def front(queue):
     if len(queue) == 0:
         print(-1)
-        print('queue: ',queue)
+        #print('queue: ',queue)
     else:
         print(queue[0])
-        print('queue: ',queue)
+        #print('queue: ',queue)
 
 def back(queue):
     if len(queue) == 0:
         print(-1)
-        print('queue: ',queue)
+        #print('queue: ',queue)
     else:
         print(queue[-1])
-        print('queue: ',queue)
+        #print('queue: ',queue)
 
 
 N = int(input())
