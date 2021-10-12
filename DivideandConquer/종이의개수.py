@@ -77,3 +77,6 @@ def dnc(x,y,n):
     elif check == 0:
         zero_count += 1
     else: minus_count += 1
+
+dnc(0,0,n)
+print( minus_count, zero_count, one_count)
