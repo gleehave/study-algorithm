@@ -32,3 +32,4 @@ https://www.acmicpc.net/step
 - [덱] https://www.acmicpc.net/problem/10866 <br>
 
 /Divide&Conquer <br>
+- [종이의개수] https://www.acmicpc.net/problem/1780 <br>
