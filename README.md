@@ -29,3 +29,4 @@ https://www.acmicpc.net/step
 
 /Queue <br>
 - [요세푸스문제] https://www.acmicpc.net/problem/11866 <br>
+- [덱] https://www.acmicpc.net/problem/10866 <br>
