@@ -34,3 +34,6 @@ https://www.acmicpc.net/step
 /Divide&Conquer <br>
 - [종이의개수] https://www.acmicpc.net/problem/1780 <br>
 - [색종이만들기] https://www.acmicpc.net/problem/2630 <br>
+
+/BinaryTree <br>
+- [가장긴증가하는부분수열2] https://www.acmicpc.net/problem/12015 <br>
