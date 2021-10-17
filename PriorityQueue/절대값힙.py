@@ -14,7 +14,26 @@ for i in range(N):
     if arr[i] != 0:
         if arr[i] > 0:
             queue_plus.append(arr[i])
-        else:
+        elif arr[i] < 0:
             queue_minus.append(arr[i])
     elif arr[i] == 0:
-        
+
+        if not queue_minus and not queue_plus:
+            print(0)
+            continue
+        queue_minus.sort(reverse=True)
+        queue_plus.sort()
+        print('minus:', queue_minus)
+        print('plus: ', queue_plus)
+        if not queue_minus:
+            print(queue_plus.pop(0))
+            continue
+        if not queue_plus:
+            print(queue_minus.pop(0))
+            continue
+        if min(queue_plus) == abs(max(queue_minus)):
+            print(queue_minus.pop(0))
+            continue
+        elif min(queue_plus) != abs(max(queue_minus)):
+            print(queue_plus.pop(0))      
+            continue
