@@ -1,3 +1,5 @@
+#20211212 test
+
 N = int(input())
 A = list(map(int, input().split()))
 
