@@ -9,6 +9,17 @@
 https://www.acmicpc.net/step  <br>
 "단계별로 풀어보기" 에 해당하는 문제를 우선으로 한다. <br>
 
+## Standard library!
+- 내장함수: 기본 입출력 함수부터 정렬 함수까지 기본적인 함수
+- itertools: 파이썬에서 반복되는 형태의 데이터를 처리하기 위한 기능 제공
+  - 특히 순열, 조합 라이브러리 자주 사용!
+  - from itertools import permutations, product
+  - from itertools import combinations, combinations_with_replacement
+- heqpq: 힙(heap) 자료구조 제공
+  - 일반적으로 우선순위 큐 기능을 사용
+- bisect: 이진탐색(binary search) 기능 제공
+- collections: 덱(deque), 카운터(counter) 등의 유용한 자료구조 포함
+
 ## Problem
 
 /Bruteforce <br>
