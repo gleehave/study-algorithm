@@ -27,6 +27,7 @@ https://www.acmicpc.net/step  <br>
 - [분해합]https://www.acmicpc.net/problem/2231 <br>
 - [덩치] https://www.acmicpc.net/problem/7568 <br>
 - [체스판칠하기] https://www.acmicpc.net/problem/1018 <br>
+- [큰 수의 법칙] chapter 03, 93p. <br>
 
 /Stack <br>
 - [스택] https://www.acmicpc.net/step/11 <br>
