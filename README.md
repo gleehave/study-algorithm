@@ -28,6 +28,7 @@ https://www.acmicpc.net/step  <br>
 - [덩치] https://www.acmicpc.net/problem/7568 <br>
 - [체스판칠하기] https://www.acmicpc.net/problem/1018 <br>
 - [큰 수의 법칙] chapter 03, 93p. <br>
+- [숫자 카드 게임] chapter 03, 96p. <br>
 
 /Stack <br>
 - [스택] https://www.acmicpc.net/step/11 <br>
