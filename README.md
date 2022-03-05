@@ -21,6 +21,8 @@ https://www.acmicpc.net/step  <br>
 - collections: 덱(deque), 카운터(counter) 등의 유용한 자료구조 포함
 
 ## Problem
+/Basic <br>
+- [기초] 기초적인 파이썬 문법 연습장
 
 /Bruteforce <br>
 - [블랙잭]https://www.acmicpc.net/problem/2798 <br>
