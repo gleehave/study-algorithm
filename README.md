@@ -6,8 +6,12 @@
 ## Getting Started
 
 백준의 알고리즘 유형을 풀어본다. <br>
-https://www.acmicpc.net/step  <br>
 "단계별로 풀어보기" 에 해당하는 문제를 우선으로 한다. <br>
+https://www.acmicpc.net/step  <br>
+
+프로그래머스 Level1 ~ Level2 <br>
+https://programmers.co.kr/ <br>
+
 
 ## Standard library!
 - 내장함수: 기본 입출력 함수부터 정렬 함수까지 기본적인 함수
