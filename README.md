@@ -12,7 +12,6 @@ https://www.acmicpc.net/step  <br>
 프로그래머스 Level1 ~ Level2 <br>
 https://programmers.co.kr/ <br>
 
-
 ## Standard library!
 - 내장함수: 기본 입출력 함수부터 정렬 함수까지 기본적인 함수
 - itertools: 파이썬에서 반복되는 형태의 데이터를 처리하기 위한 기능 제공
@@ -23,6 +22,11 @@ https://programmers.co.kr/ <br>
   - 일반적으로 우선순위 큐 기능을 사용
 - bisect: 이진탐색(binary search) 기능 제공
 - collections: 덱(deque), 카운터(counter) 등의 유용한 자료구조 포함
+
+## 내가 항상 놓치는 부분!
+- Python에서 리스트, 문자열의 원소가 있는지 체크 하고 싶으면, if value in array: 를 하면 True일 때를 체크할 쉽게 체크할 수 있다.
+- array안에서 특정 원소의 개수를 알고 싶으면, array.count(3), array.count('apple')를 사용해서 쉽게 개수를 알 수 있다.
+- 문자열에서 일부 값을 변경하고 싶다면, array.replace('..', '.') 를 하면 쉽게 변경할 수 있다.
 
 ## Problem
 /Basic <br>
