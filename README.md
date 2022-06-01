@@ -28,6 +28,8 @@ https://programmers.co.kr/ <br>
 - array안에서 특정 원소의 개수를 알고 싶으면, array.count(3), array.count('apple')를 사용해서 쉽게 개수를 알 수 있다.
 - 문자열에서 일부 값을 변경하고 싶다면, array.replace('..', '.') 를 하면 쉽게 변경할 수 있다.
 - value.isdigit(), value.isalpha() 을 통해서 문자열의 type을 확인할 수 있다.
+- 거리 계산이나 경로를 찾을 때, 좌표계형태로 반드시 생각해볼 것!
+  - 좌표계일 때, 거리는 행과 열을 모두 계산할 것!
 
 ## Problem
 /Basic <br>
@@ -71,3 +73,4 @@ https://programmers.co.kr/ <br>
   - [Level1] https://programmers.co.kr/learn/courses/30/lessons/77484<br>
   - [Level1] https://programmers.co.kr/learn/courses/30/lessons/72410<br>
   - [Level1] https://programmers.co.kr/learn/courses/30/lessons/81301<br>
+  - [Level1] https://programmers.co.kr/learn/courses/30/lessons/67256<br>
