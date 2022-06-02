@@ -29,7 +29,12 @@ https://programmers.co.kr/ <br>
 - 문자열에서 일부 값을 변경하고 싶다면, array.replace('..', '.') 를 하면 쉽게 변경할 수 있다.
 - value.isdigit(), value.isalpha() 을 통해서 문자열의 type을 확인할 수 있다.
 - 거리 계산이나 경로를 찾을 때, 좌표계형태로 반드시 생각해볼 것!
-  - 좌표계일 때, 거리는 행과 열을 모두 계산할 것!
+- 좌표계일 때, 거리는 행과 열을 모두 계산할 것!
+- 10진수를 binary 2진수로 나타낼 때, bin(9)[2:] 를 하면 자동으로 변환해줌. bin(i): 0b1001 
+- arr이 배열일 때, arr.rjust(n, '0')를 하면 n의 자릿수만큼 '0'을 채워줌. '0'외에 다른 값도 가능
+    - arr=[1,0,0,1], n=5 이면 arr.rjust : [0,1,0,0,1]
+    - arr=[1,0,0,1], n=5 이면 arr.ljust : [1,0,0,1,0]
+
 
 ## Problem
 /Basic <br>
@@ -75,3 +80,4 @@ https://programmers.co.kr/ <br>
   - [Level1] https://programmers.co.kr/learn/courses/30/lessons/81301<br>
   - [Level1] https://programmers.co.kr/learn/courses/30/lessons/67256<br>
   - [Level1] https://programmers.co.kr/learn/courses/30/lessons/86051<br>
+  - [Level1] https://programmers.co.kr/learn/courses/30/lessons/17681<br>
