@@ -18,6 +18,8 @@ https://programmers.co.kr/ <br>
   - 특히 순열, 조합 라이브러리 자주 사용!
   - from itertools import permutations, product
   - from itertools import combinations, combinations_with_replacement
+      - combinations라는 내장함수(built-in)을 이용하여 인자값에 따라 해당 요소로 구할 수 있는 모든 조합을 리턴한다.
+      - combinations(numbers, 2) -> numbers 리스트 안에 2개의 요소로 구할 수 있는 모든 조합을 반환
 - heqpq: 힙(heap) 자료구조 제공
   - 일반적으로 우선순위 큐 기능을 사용
 - bisect: 이진탐색(binary search) 기능 제공
