@@ -20,6 +20,12 @@ https://programmers.co.kr/ <br>
   - from itertools import combinations, combinations_with_replacement
       - combinations라는 내장함수(built-in)을 이용하여 인자값에 따라 해당 요소로 구할 수 있는 모든 조합을 리턴한다.
       - combinations(numbers, 2) -> numbers 리스트 안에 2개의 요소로 구할 수 있는 모든 조합을 반환
+      - for li in combinations(menu_li, k): # combinations 함수를 통해 만들고, 1개씩 접근
+- Counter: collections 모듈의 Counter 클래스 제공. 데이터의 개수를 셀 때, 주로 이용한다.
+  - Counter('hello world') # Counter({'l':3, 'o':2, 'h':1, 'e':1 .....})
+  - Counter('hello world').most_common() 을 하면 데이터 개수가 많은 수느올 정렬된 배열을 리턴한다.
+    - [('l',3), ('o',2), ('h',1) ...]
+    - Counter('hello world').most_common(1) # [('l',3)]
 - heqpq: 힙(heap) 자료구조 제공
   - 일반적으로 우선순위 큐 기능을 사용
 - bisect: 이진탐색(binary search) 기능 제공
@@ -36,7 +42,8 @@ https://programmers.co.kr/ <br>
 - arr이 배열일 때, arr.rjust(n, '0')를 하면 n의 자릿수만큼 '0'을 채워줌. '0'외에 다른 값도 가능
     - arr=[1,0,0,1], n=5 이면 arr.rjust : [0,1,0,0,1]
     - arr=[1,0,0,1], n=5 이면 arr.ljust : [1,0,0,1,0]
-
+- '구분자'.join(리스트) : join함수는 매개변수로 들어오는 리스트에 있는 요소 하나하나를 합쳐서 하나의 문자열로 바꾸어 반환한다.
+  - ''.join(['a','b','c']) # 'abc'로 반환
 
 ## Problem
 /Basic <br>
@@ -84,3 +91,4 @@ https://programmers.co.kr/ <br>
   - [Level1] https://programmers.co.kr/learn/courses/30/lessons/86051<br>
   - [Level1] https://programmers.co.kr/learn/courses/30/lessons/17681<br>
   - [Level1] https://programmers.co.kr/learn/courses/30/lessons/68644<br>
+  - [Level2] https://programmers.co.kr/learn/courses/30/lessons/72411<br>
