@@ -85,7 +85,7 @@ https://programmers.co.kr/ <br>
 - [절대값힙] https://www.acmicpc.net/problem/11286 <br>
 
 /프로그래머스 <br>
-  /Level1
+- Level1
   - [Level1] https://programmers.co.kr/learn/courses/30/lessons/77484<br>
   - [Level1] https://programmers.co.kr/learn/courses/30/lessons/72410<br>
   - [Level1] https://programmers.co.kr/learn/courses/30/lessons/81301<br>
@@ -93,7 +93,7 @@ https://programmers.co.kr/ <br>
   - [Level1] https://programmers.co.kr/learn/courses/30/lessons/86051<br>
   - [Level1] https://programmers.co.kr/learn/courses/30/lessons/17681<br>
   - [Level1] https://programmers.co.kr/learn/courses/30/lessons/68644<br>
-/Level2
+- Level2
   - [Level2] https://programmers.co.kr/learn/courses/30/lessons/72411<br>
   - [Level2] https://programmers.co.kr/learn/courses/30/lessons/62048<br>
   - [Level2] https://programmers.co.kr/learn/courses/30/lessons/1844<br>
