@@ -92,3 +92,4 @@ https://programmers.co.kr/ <br>
   - [Level1] https://programmers.co.kr/learn/courses/30/lessons/17681<br>
   - [Level1] https://programmers.co.kr/learn/courses/30/lessons/68644<br>
   - [Level2] https://programmers.co.kr/learn/courses/30/lessons/72411<br>
+  - [Level2] https://programmers.co.kr/learn/courses/30/lessons/62048<br>
