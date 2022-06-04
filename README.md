@@ -44,6 +44,7 @@ https://programmers.co.kr/ <br>
     - arr=[1,0,0,1], n=5 이면 arr.ljust : [1,0,0,1,0]
 - '구분자'.join(리스트) : join함수는 매개변수로 들어오는 리스트에 있는 요소 하나하나를 합쳐서 하나의 문자열로 바꾸어 반환한다.
   - ''.join(['a','b','c']) # 'abc'로 반환
+- BFS 경로를 찾을 때, queue를 사용한다. 또한, 주어진 값과 비교할 수 있는 지나간 경로를 기억할 수 있는 좌표가 필요하다!
 
 ## Problem
 /Basic <br>
@@ -93,3 +94,4 @@ https://programmers.co.kr/ <br>
   - [Level1] https://programmers.co.kr/learn/courses/30/lessons/68644<br>
   - [Level2] https://programmers.co.kr/learn/courses/30/lessons/72411<br>
   - [Level2] https://programmers.co.kr/learn/courses/30/lessons/62048<br>
+  - [Level2] https://programmers.co.kr/learn/courses/30/lessons/1844<br>
