@@ -21,7 +21,7 @@ https://programmers.co.kr/ <br>
       - combinations라는 내장함수(built-in)을 이용하여 인자값에 따라 해당 요소로 구할 수 있는 모든 조합을 리턴한다.
       - combinations(numbers, 2) -> numbers 리스트 안에 2개의 요소로 구할 수 있는 모든 조합을 반환
       - for li in combinations(menu_li, k): # combinations 함수를 통해 만들고, 1개씩 접근
-- Counter: collections 모듈의 Counter 클래스 제공. 데이터의 개수를 셀 때, 주로 이용한다.
+- Counter: collections 모듈의 Counter 클래스 제공함. 데이터의 개수를 셀 때, 주로 이용한다.
   - Counter('hello world') # Counter({'l':3, 'o':2, 'h':1, 'e':1 .....})
   - Counter('hello world').most_common() 을 하면 데이터 개수가 많은 수느올 정렬된 배열을 리턴한다.
     - [('l',3), ('o',2), ('h',1) ...]
@@ -45,6 +45,7 @@ https://programmers.co.kr/ <br>
 - '구분자'.join(리스트) : join함수는 매개변수로 들어오는 리스트에 있는 요소 하나하나를 합쳐서 하나의 문자열로 바꾸어 반환한다.
   - ''.join(['a','b','c']) # 'abc'로 반환
 - BFS 경로를 찾을 때, queue를 사용한다. 또한, 주어진 값과 비교할 수 있는 지나간 경로를 기억할 수 있는 좌표가 필요하다!
+- '문자열'.startswith(str or tuple) 형식으로 하면, 대소문자를 구분해서 문자열이 string에 있으면 true, 없으면 false를 반환
 
 ## Problem
 /Basic <br>
@@ -100,3 +101,4 @@ https://programmers.co.kr/ <br>
   - [Level2] https://programmers.co.kr/learn/courses/30/lessons/42885<br>
   - [Level2] https://programmers.co.kr/learn/courses/30/lessons/70129<br>
   - [Level2] https://programmers.co.kr/learn/courses/30/lessons/81302<br>
+  - [Level2] https://programmers.co.kr/learn/courses/30/lessons/42577<br>
