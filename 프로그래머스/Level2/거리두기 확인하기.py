@@ -9,17 +9,23 @@ from collections import deque
 def bfs(p):
     start = []
 
+    # P가 있는 좌표 저장
     for i in range(5):
         for j in range(5):
             if p[i][j] == 'P':
                 start.append([i, j])
 
+    # P가 있는 좌표 1개씩 꺼내서 deque에 저장
     for s in start:
         queue = deque([s])
+
         visited = [[0]*5 for i in range(5)]
         distance = [[0]*5 for i in range(5)]
+
+        # 시작 방문 좌표 1로 바꾸기
         visited[s[0]][s[1]] = 1
 
+        # 시작하는 P위치에서 qeue에 들어있는 모든 P와의 거리를 확인
         while queue:
             y, x = queue.popleft()
 
@@ -41,4 +47,7 @@ def bfs(p):
 
 def solution(places):
     answer = []
+    for i in places:
+        answer.append(bfs(i))
+
     return answer
