@@ -46,6 +46,8 @@ https://programmers.co.kr/ <br>
   - ''.join(['a','b','c']) # 'abc'로 반환
 - BFS 경로를 찾을 때, queue를 사용한다. 또한, 주어진 값과 비교할 수 있는 지나간 경로를 기억할 수 있는 좌표가 필요하다!
 - '문자열'.startswith(str or tuple) 형식으로 하면, 대소문자를 구분해서 문자열이 string에 있으면 true, 없으면 false를 반환
+- 괄호변환 같은 키워드의 문제는 stack으로 접근해서, append, pop을 이용해서 괄호의 짝이 맞는지 검사할 수 있도록 접근한다.
+  - 괄호변환 뿐만 아니라, 짝을 맞추는 검사를 해야한다면 stack 자료구조를 이용해보자
 
 ## Problem
 /Basic <br>
