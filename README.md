@@ -71,6 +71,9 @@ https://programmers.co.kr/ <br>
 - [가장긴바이토닉부분수열] https://www.acmicpc.net/problem/11054 <br>
 - [정수삼각형] https://www.acmicpc.net/problem/1932 <br>
 
+/Linked List <br>
+- [문제로풀어보는 알고리즘] 34p.
+
 /Queue <br>
 - [요세푸스문제] https://www.acmicpc.net/problem/11866 <br>
 - [덱] https://www.acmicpc.net/problem/10866 <br>
