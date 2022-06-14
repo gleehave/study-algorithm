@@ -50,6 +50,7 @@ https://programmers.co.kr/ <br>
   - 괄호변환 뿐만 아니라, 짝을 맞추는 검사를 해야한다면 stack 자료구조를 이용해보자
 - DP관련 문제 (e.g., 타일링문제)에 대해서는 규칙성을 점화식으로 나타낸 후 code를 작성한다.
   - D(n) = D(n-1)+D(n-2) 의 형태로 나타낸 후, 재귀적으로 풀어낼 수 있다.
+  - [DP] https://www.youtube.com/watch?v=YHZiWaL49HY
 
 
 ## Problem
