@@ -51,7 +51,7 @@ https://programmers.co.kr/ <br>
 - DP관련 문제 (e.g., 타일링문제)에 대해서는 규칙성을 점화식으로 나타낸 후 code를 작성한다.
   - D(n) = D(n-1)+D(n-2) 의 형태로 나타낸 후, 재귀적으로 풀어낼 수 있다.
   - [DP] https://www.youtube.com/watch?v=YHZiWaL49HY
-
+- str.isdigit() : 문자열이 '숫자'로 이루어졌는지 확인하는 함수.
 
 ## Problem
 /Basic <br>
