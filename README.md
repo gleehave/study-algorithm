@@ -52,7 +52,12 @@ https://programmers.co.kr/ <br>
   - D(n) = D(n-1)+D(n-2) 의 형태로 나타낸 후, 재귀적으로 풀어낼 수 있다.
   - [DP] https://www.youtube.com/watch?v=YHZiWaL49HY
 - str.isdigit() : 문자열이 '숫자'로 이루어졌는지 확인하는 함수.
-
+- 백트래킹: 해를 찾는 도중 해가 아니면 되돌아가서 다시 해를 찾는다.
+  - DFS는 모든 경우를 전부 찾는다.
+  - 해가 없는 경로를 조건으로 걸어두면, 경로를 더이상 가지 않고, 되돌아간다.
+  - DFS과 같이 모든 경우의 수를 탐색하는 과정에서, 조건문 등을 걸어 답이 절대로 될 수 없는 상황을 정의하고, 
+  - 그러한 상황일 경우에 탐색을 중지시킨 뒤 이전으로 돌아가서 다시 다른 경우를 탐색하는 것으로 구현한다.
+  - [backtracking] https://chanhuiseok.github.io/posts/algo-23/
 ## Problem
 /Basic <br>
 - [기초] 기초적인 파이썬 문법 연습장
