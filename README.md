@@ -58,6 +58,7 @@ https://programmers.co.kr/ <br>
   - DFS과 같이 모든 경우의 수를 탐색하는 과정에서, 조건문 등을 걸어 답이 절대로 될 수 없는 상황을 정의하고, 
   - 그러한 상황일 경우에 탐색을 중지시킨 뒤 이전으로 돌아가서 다시 다른 경우를 탐색하는 것으로 구현한다.
   - [backtracking] https://chanhuiseok.github.io/posts/algo-23/
+  - [backtracking] https://www.youtube.com/watch?v=Ar40zcPoKEI
 ## Problem
 /Basic <br>
 - [기초] 기초적인 파이썬 문법 연습장
