@@ -43,12 +43,12 @@
 #                 stack.append((dy, dx))
 #
 def IsSafe(y, x):
-    return 0<= y < N and 0 <= x < N and (maze[y][x]==0 or maze[y][x]==3)
+    return 0<= y < N and 0 <= x < N and (Maze[y][x]==0 or Maze[y][x]==3)
 
 def DFS(start_y, start_x):
     global result
 
-    if maze[start_y][start_x] == 3:
+    if Maze[start_y][start_x] == 3:
         result = 1
         return
 
