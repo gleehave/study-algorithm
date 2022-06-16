@@ -30,6 +30,7 @@ https://programmers.co.kr/ <br>
   - 일반적으로 우선순위 큐 기능을 사용
 - bisect: 이진탐색(binary search) 기능 제공
 - collections: 덱(deque), 카운터(counter) 등의 유용한 자료구조 포함
+  - from collections import deque 혹은 import Queue 를 선언하여 queue 자료구조를 활용할 수 있다.
 
 ## 내가 항상 놓치는 부분!
 - Python에서 리스트, 문자열의 원소가 있는지 체크 하고 싶으면, if value in array: 를 하면 True일 때를 체크할 쉽게 체크할 수 있다.
