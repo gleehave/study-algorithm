@@ -60,6 +60,14 @@ https://programmers.co.kr/ <br>
   - 그러한 상황일 경우에 탐색을 중지시킨 뒤 이전으로 돌아가서 다시 다른 경우를 탐색하는 것으로 구현한다.
   - [backtracking] https://chanhuiseok.github.io/posts/algo-23/
   - [backtracking] https://www.youtube.com/watch?v=Ar40zcPoKEI
+- 힙(heap): 완전 이진트리에 있는 노드 중에서 키 값이 가장 큰 노드나 키 값이 가장 작은 노드를 찾기 위한 자료구조
+  - 힙은 최대힙(max heap)과 최소힙(min heap)이 있다.
+  - import heapq (파이썬에서 heapq 모듈은 기본적으로 최소힙이다.)
+    - max_heap = []
+    - for item in heap_items:
+    -     heapq.heappush(max_heap, (-item, item))
+    - heapq.heappush(heap, item) / heapq.heapqpop(heap) / heapq.heapify(list) : 리스트를 heap으로 변환
+
 ## Problem
 /Basic <br>
 - [기초] 기초적인 파이썬 문법 연습장
