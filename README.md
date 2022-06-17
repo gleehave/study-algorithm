@@ -67,7 +67,12 @@ https://programmers.co.kr/ <br>
     - for item in heap_items:
     -     heapq.heappush(max_heap, (-item, item))
     - heapq.heappush(heap, item) / heapq.heapqpop(heap) / heapq.heapify(list) : 리스트를 heap으로 변환
-
+- 문자열 바이너리 변환
+  - string = "Python"
+  - binary = ' '.join(format(ord(c), 'b') for c in string)
+  - binary = ' '.join(format(ord(c), 'b') for c in bytearray(string, 'utf-8'))
+  - binray = ' '.join(map(bin, bytearray(string, 'utf-8')))
+  
 ## Problem
 /Basic <br>
 - [기초] 기초적인 파이썬 문법 연습장
