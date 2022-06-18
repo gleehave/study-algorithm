@@ -37,28 +37,32 @@ dy = [1, 0]
 
 def dfs(x, y):
     global res, tmp
-    if res < tmp:
+    if res < tmp:  # 현재 결과값 보다 크면 함수 끝나도록 -> 제한시간때문에 가지치기 해야함
         return
     if x == N-1 and y == N-1:
         res = tmp
         return
-    for delta in range(2):
-        move_x = x + dx[delta]
-        move_y = y + dy[delta]
-        if move_x < 0 or move_y >= N or move_y < 0 or move_y >= N:
+    for d in range(2):
+        nx = x + dx[d]
+        ny = y + dy[d]
+        if nx<0 or nx>=N or ny<0 or ny>=N:
             continue
-        if (move_x, move_y) not in visited:
-            visited.append((move_x, move_y))
-            tmp += board[move_x][move_y]
-            dfs(move_x, move_y)
-            tmp -= board[move_x][move_y]
-            visited.remove((move_x, move_y))
+        if (nx, ny) not in visited:
+            visited.append((nx, ny))  # 좌표 업로드
+            tmp += a[nx][ny]
+            print("dfs 전 tmp: ", tmp)
+            dfs(nx, ny)
+            tmp -= a[nx][ny]  # 원상복구
+            print('dfs 후 tmp:', tmp)
+            visited.remove((nx, ny))
+            print("visited 제거: ", visited)
+
 
 for tc in range(1, T+1):
     N = int(input())
-    board = [list(map(int, input().split())) for _ in range(N)]
-    visited = []
-    res = 10000000
-    tmp = board[0][0]
-    dfs(0, 0)
+    a = [list(map(int, input().split())) for _ in range(N)]
+    visited = [] # stack 역할을 한다.
+    res = 3000
+    tmp = a[0][0]
+    dfs(0, 0)  # 현재좌표
     print("#{} {}".format(tc, res))
