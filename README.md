@@ -63,10 +63,16 @@ https://programmers.co.kr/ <br>
 - 힙(heap): 완전 이진트리에 있는 노드 중에서 키 값이 가장 큰 노드나 키 값이 가장 작은 노드를 찾기 위한 자료구조
   - 힙은 최대힙(max heap)과 최소힙(min heap)이 있다.
   - import heapq (파이썬에서 heapq 모듈은 기본적으로 최소힙이다.)
-    - max_heap = []
-    - for item in heap_items:
-    -     heapq.heappush(max_heap, (-item, item))
-    - heapq.heappush(heap, item) / heapq.heapqpop(heap) / heapq.heapify(list) : 리스트를 heap으로 변환
+    ```
+    max_heap = []
+    for item in heap_items:
+        heapq.heappush(max_heap, (-item, item))
+    
+    heap = [50, 10, 20] # 미리 생성해둔 리스트가 있을 때,
+    heap.heapify(heap)
+    print(heap) # [10, 50, 20] 이 출력된다. 
+    ```
+    heapq.heappush(heap, item) / heapq.heapqpop(heap) / heapq.heapify(list) : 리스트를 heap으로 변환
 - 문자열 바이너리 변환
   - string = "Python"
   - binary = ' '.join(format(ord(c), 'b') for c in string)
