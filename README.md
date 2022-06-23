@@ -86,7 +86,24 @@ https://programmers.co.kr/ <br>
   4. 해당 노드를 거쳐 다른 노드로 가는 비용을 계산하고, 최단 거리 테이블을 갱신한다.
   5. 3번과 4번 과정을 반복한다.
   ```
- 
+- 인접행렬(Adjacency Matrix), 인접리스트(Adjacency List)
+  ```
+  # 인접행렬
+  graph = [
+      [0, 7, 5],
+      [7, 0, INF],
+      [5, INF, 0]
+  ]
+  
+  # 인접리스트
+  graph = [[] for _ in range(3)]
+  graph[0].append((1, 7))
+  graph[0].append((2, 5))
+  graph[0].append((0, 7))
+  graph[0].append((0, 5))
+  # [[(1,7), (2,5)], [(0, 7)], [(0, 5)]]
+  ```
+
 ## Problem
 /Basic <br>
 - [기초] 기초적인 파이썬 문법 연습장
