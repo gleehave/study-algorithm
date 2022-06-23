@@ -78,7 +78,15 @@ https://programmers.co.kr/ <br>
   - binary = ' '.join(format(ord(c), 'b') for c in string)
   - binary = ' '.join(format(ord(c), 'b') for c in bytearray(string, 'utf-8'))
   - binray = ' '.join(map(bin, bytearray(string, 'utf-8')))
-  
+- 다익스트라 최단경로 알고리즘
+  ```
+  1. 출발 노드를 설정한다.
+  2. 최단 거리 테이블을 초기화한다.
+  3. 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드를 선택한다.
+  4. 해당 노드를 거쳐 다른 노드로 가는 비용을 계산하고, 최단 거리 테이블을 갱신한다.
+  5. 3번과 4번 과정을 반복한다.
+  ```
+ 
 ## Problem
 /Basic <br>
 - [기초] 기초적인 파이썬 문법 연습장
