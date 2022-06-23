@@ -23,7 +23,7 @@ https://programmers.co.kr/ <br>
       - for li in combinations(menu_li, k): # combinations 함수를 통해 만들고, 1개씩 접근
 - Counter: collections 모듈의 Counter 클래스 제공함. 데이터의 개수를 셀 때, 주로 이용한다.
   - Counter('hello world') # Counter({'l':3, 'o':2, 'h':1, 'e':1 .....})
-  - Counter('hello world').most_common() 을 하면 데이터 개수가 많은 수느올 정렬된 배열을 리턴한다.
+  - Counter('hello world').most_common() 을 하면 데이터 개수가 많은 수를 정렬된 배열을 리턴한다.
     - [('l',3), ('o',2), ('h',1) ...]
     - Counter('hello world').most_common(1) # [('l',3)]
 - heqpq: 힙(heap) 자료구조 제공
