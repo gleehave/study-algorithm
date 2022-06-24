@@ -22,4 +22,4 @@ for i in range(len(data) - 1):
             count0 += 1
         else:
             count1 += 1
-
+print(min(count0, count1))
