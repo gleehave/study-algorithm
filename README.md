@@ -359,6 +359,28 @@ for test in range(1, int(input())+1):
   print("#{} {}".format(test, answer)
 ```
 
+## Dijkstra
+```
+def Dijkstra(G, r):
+  D = [INF]*N
+  P = [None]*N
+  visited = [False]*N
+  D[r] = 0
+  
+  for _ in range(N):
+    minIndex = -1
+    min = INF
+    for i in range(N):
+      if not visited[i] and D[i] < min:
+        min = D[i]
+        minIndes = i
+    visited[minIndex] = True
+    for v, val in G[minIndex]:
+      if not visited[v] and D[minIndex] + val < D[v]:
+        D[v] = D[minIndex] + val
+        P[v] = minIndex
+```
+
 ## Problem
 /Basic <br>
 - [기초] 기초적인 파이썬 문법 연습장
