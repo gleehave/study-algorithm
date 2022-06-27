@@ -129,6 +129,33 @@ for i in range(0, len(arr)):
 if stack:
   ans = 0
 ```
+
+## Graph
+```
+T = int(input())
+for tc in range(1, T+1):
+  V, E = map(int, input().split())
+  node = [[] for _ in range(V+1)]
+  for _ in range(E):
+    start, end = map(int, input().split())
+    node[start].append(end)
+  
+  S, G = map(int, input().split())
+  stack = [S]
+  visited = [False for ) in range(V+1)]
+  
+  whiel stack:
+    now = stack.pop()
+    visited[now] = True
+    for next in node[now]:
+      if not visited[next]:
+        stack.append(next)
+  
+  if visited[G]:
+    result = 1
+  else:
+  result = 0
+```
  
 ## DFS
 ```
