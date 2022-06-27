@@ -181,6 +181,54 @@ for test_case in range(T):
   backtracking(0, N, 0, visited)
 ```
 
+## Divide & Conquer
+```
+def rsp(a, b):
+  if data[a] == data[b]:
+    return a
+  elif (data[a] - data[b] == 1) or (data[a]-data[b] == -2):
+    return a
+  return b
+
+def divide(start, end):
+  if start == end:
+    return start
+  a = divide(start, (start+end)//2)
+  b = divide((start+end)//2+1, end)
+  return rsp(a, b)
+
+result = divide(0, N-1)
+----------------------------------------
+def merge_sort(m):
+  if len(m) <= 1:
+    return m
+  mid = len(m)//2
+  left = m[:mid]
+  right = m[mid:]
+  
+  left = merge_sort(left)
+  right = merge_sort(right)
+  
+  return merge(left, right)
+
+def merge(left, right):
+  result = []
+  
+  while len(left) > 0 and len(right) > 0:
+    if left[0] <= right[0]:
+      result.append(left.pop(0))
+    else:
+      result.append(right.pop(0))
+  
+  if len(left) > 0:
+    result.extend(left)
+  
+  if len(right) > 0:
+    result.extend(right)
+  
+  return result
+```
+
 ## Problem
 /Basic <br>
 - [기초] 기초적인 파이썬 문법 연습장
