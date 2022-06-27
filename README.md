@@ -144,6 +144,18 @@ dfs bfs(start_y, start_x):
           return
 ```
 
+## DP
+```
+def function(N):
+  if N % 10 == 0:
+    if N == 10:
+      return 1
+    elif N == 20:
+      return 3
+    else:
+    return function(N-10) + (2 * function(N-20))
+```
+
 ## Problem
 /Basic <br>
 - [기초] 기초적인 파이썬 문법 연습장
