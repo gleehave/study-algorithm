@@ -103,7 +103,33 @@ https://programmers.co.kr/ <br>
   graph[0].append((0, 5))
   # [[(1,7), (2,5)], [(0, 7)], [(0, 5)]]
   ```
-  
+
+## Stack
+```
+stack = []
+ans = 1
+string = str(input())
+
+arr = list(string)
+for i in range(0, len(arr)):
+  if arr[i] == '(' or arr[i] == '{':
+    stack.append(arr[i])
+  elif arr[i] == ')' or arr[i] == '}':
+    if not stack:
+      ans = 0
+      break
+    
+    P = stack.pop()
+
+    if arr[i] == ')' and P != '(':
+      ans = 0
+    elif arr[i] == '}' and P != '{':
+      ans = 0
+
+if stack:
+  ans = 0
+```
+ 
 ## DFS
 ```
 def dfs(y, x):
