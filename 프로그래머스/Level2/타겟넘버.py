@@ -10,19 +10,19 @@
 
 # 타겟넘버를 만드는 방법의 수를 찾아라.
 
-def dfs(numbers, target, depth):
-    count = 0
-    if depth == len(numbers):
-        if sum(numbers) == target:
-            return 1
-        else:
-            return 0
-    else:
-        count += dfs(numbers, target, depth+1)
-        numbers[depth] *= -1
-        count += dfs(numbers, target, depth-1)
-        return count
+answer = 0
+def DFS(idx, numbers, target, value):
+    global answer
+    N = len(numbers)
+    if (idx == N and target == value):
+        answer += 1
+        return
+    if (idx == N):
+        return
+    DFS(idx+1, numbers, target, value+numbers[idx])
+    DFS(idx+1, numbers, target, value-numbers[idx])
 
 def solution(numbers, target):
-    count = dfs(numbers, target, 0)
-    return count
+    global answer
+    DFS(0, numbers, target, 0)
+    return answer
