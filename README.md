@@ -325,18 +325,38 @@ def kruskal(graphs, weights):
       mst_graphs[v2][v1] = 1
       weight_sum += weights[v1][v2]
 -----------------------------------------------
-def MST_kruskal(G):
-  mst = []
-  for i in range(N):
-    make_set(i)
-  G.sort(key=lambda t: t[2])
-  mst_cost = 0
-  while len(mst) < N-1:
-    u, v, val = G.pop(0)
-    if findset(u) != findset(v):
-      union(u, v)
-      mst.append((u, v))
-      mst_cost += val
+from heapq import heappop, heappush
+
+def find(x):
+  if parents[x] == x:
+    return x
+  parents[x] = find(parents[x])
+  return parents[x]
+
+def union(a, b):
+  a = find(a)
+  b = find(b)
+  if a > b:
+    a, b = b, a
+  parents[b] = a
+
+for test in range(1, int(input())+1):
+  V, E = map(int, input().split())
+  parents = {i: i for i in range(V+1)}
+  edges = []
+  
+  for _ in range(E):
+    a, b, w = map(int, input().split())
+    heappush(edges, (w, a, b))
+  
+  answer = 0
+  while edges:
+    w, a, b = heappop(edges)
+    if find(a) != find(b)
+      union(a, b)
+      answer += w
+  
+  print("#{} {}".format(test, answer)
 ```
 
 ## Problem
