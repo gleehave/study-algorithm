@@ -103,6 +103,27 @@ https://programmers.co.kr/ <br>
   graph[0].append((0, 5))
   # [[(1,7), (2,5)], [(0, 7)], [(0, 5)]]
   ```
+  
+## DFS
+```
+def dfs(y, x):
+  global res
+  data[y][x] = 1
+  for d in range(4):
+    xf = dx[d] + x
+    yf = dy[d] + y
+    if (0 <= xf < N) and (0 <= yf < N):
+      if data[yf][xf] == 0:
+        dfs(yf, xf)
+      if data[yf][xf] == 3:
+        res = 1
+        return
+dx = [1, -1, 0, 0]
+dy = [0, 0, 1, -1]
+res = 0
+dfs(y, x)
+```
+
 
 ## Problem
 /Basic <br>
