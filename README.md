@@ -257,6 +257,33 @@ def binary_search(a, low, high, key):
       return binary_search(a, middle+1, high, key)
 ```
 
+## Prim
+```
+# pi = 간선정보
+# key = pi에 저장된 가중치
+
+def MST(G, S):
+  key = [INF] * N
+  pi = [None] * N
+  visited = [False] * N
+  key[S] = 0
+  
+  for _ in range(N):
+    minIndex = -1
+    min = INF
+    for i in range(N):
+      if not visited[i] and key[i] < min:
+        min = key[i]
+        minIndex = i
+    
+    visited[minIndex] = True
+    
+    for v, val in G[minIndex]:
+      if not visited[v] and val < key[v]:
+        key[v] = val
+        pi[v] = minIndex
+```
+
 ## Problem
 /Basic <br>
 - [기초] 기초적인 파이썬 문법 연습장
