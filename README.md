@@ -156,6 +156,31 @@ def function(N):
     return function(N-10) + (2 * function(N-20))
 ```
 
+## Backtracking
+```
+def backtracking(i, N, S, visited):
+  global sumV
+  if i == N:
+    if s < sumV:
+      sumV = s
+  elif s > sumV:
+    return
+  else:
+    for j in range(N):
+      if not visited[j]:
+        visited[j] = 1
+        backtracking(i+1, N, s+num_list[i][j], visited)
+        visited[j] = 0
+
+T = int(input())
+for test_case in range(T):
+  N = int(input())
+  num_list = [list(map(int, input().split())) for _ in range(N)]
+  sumV = 100
+  visited[0] * N
+  backtracking(0, N, 0, visited)
+```
+
 ## Problem
 /Basic <br>
 - [기초] 기초적인 파이썬 문법 연습장
