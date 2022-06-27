@@ -324,6 +324,19 @@ def kruskal(graphs, weights):
       mst_graphs[v1][v2] = 1
       mst_graphs[v2][v1] = 1
       weight_sum += weights[v1][v2]
+-----------------------------------------------
+def MST_kruskal(G):
+  mst = []
+  for i in range(N):
+    make_set(i)
+  G.sort(key=lambda t: t[2])
+  mst_cost = 0
+  while len(mst) < N-1:
+    u, v, val = G.pop(0)
+    if findset(u) != findset(v):
+      union(u, v)
+      mst.append((u, v))
+      mst_cost += val
 ```
 
 ## Problem
