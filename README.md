@@ -284,6 +284,48 @@ def MST(G, S):
         pi[v] = minIndex
 ```
 
+## Kruskal
+```
+class disjoinset:
+  def __init__(self):
+    self.parent = None
+
+def unionset(set1, set2):
+  set2 = findset(set2)
+  set2.parent = set1
+  
+def findset(set):
+  while set.parent != None:
+    set = set.parent
+  return set
+
+def kruskal(graphs, weights):
+  mst_graphs = [[0 for _ in range(len(graphs))] for _ in range(len(graphs))]
+  vertex_sets = [disjoinset() for _ in range(len(graphs))]
+  visited = set()
+  heap = []
+  
+  for vertex in range(len(graphs)):
+    for target in range(vertex, len(graphs)):
+      if weights[vertex][target] > 0:
+        heapq.heappush(heap, (weights[vertex][target], vertex, target))
+  
+  weight_sum = 0
+  while len(heap) > 0:
+    pop = heapq.heappop(heap)
+    w = pop[0]
+    v1 = pop[1]
+    v2 = pop[2]
+    set1 = vertex_sets[v1]
+    set2 = vertex_sets[v2]
+    
+    if findset(set1) != findset(set2):
+      unionset(set1, set2)
+      mst_graphs[v1][v2] = 1
+      mst_graphs[v2][v1] = 1
+      weight_sum += weights[v1][v2]
+```
+
 ## Problem
 /Basic <br>
 - [기초] 기초적인 파이썬 문법 연습장
