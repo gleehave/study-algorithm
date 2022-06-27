@@ -229,6 +229,34 @@ def merge(left, right):
   return result
 ```
 
+## Binary Search
+```
+def binary_search(a, key):
+  start = 0
+  end = len(a) -1 
+  while start <= end:
+    middle = start + (end-start) // 2
+    if key == a[middle]:
+      return middle
+    elif key < a[middle]:
+      end = middle - 1
+    else:
+      start = middle + 1
+  return -1
+
+def binary_search(a, low, high, key):
+  if low > high:
+    return -1
+  else:
+    middle = (low+high) // 2
+    if key == a[middle]:
+      return middle
+    elif key < a[middle]:
+      return binary_search(a, low, middle-1, key)
+    else:
+      return binary_search(a, middle+1, high, key)
+```
+
 ## Problem
 /Basic <br>
 - [기초] 기초적인 파이썬 문법 연습장
