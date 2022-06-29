@@ -195,6 +195,27 @@ dfs bfs(start_y, start_x):
         if Maze[newY][newX] == 3:
           D_result = Distance[newY][newX] - 1
           return
+-----------------------------------------------------------------
+def solution(n, computers):
+    answer = 0
+    visited = [False] * n
+    for node in range(n):
+        if visited[node] == False:
+            bfs(n, computers, node, visited)
+            answer += 1
+    return answer
+
+def bfs(n, computers, node, visited):
+    visited[node] = True
+    q = deque()
+    q.append(node)
+    while q:
+        node = q.popleft()
+        visited[node] = True
+        for connect in range(n):
+            if connect != node and computers[node][connect] == 1:
+                if visited[connect] == False:
+                    q.append(connect)
 ```
 
 ## DP
