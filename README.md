@@ -456,71 +456,71 @@ def Dijkstra(G, r):
 ```
 
 ## Problem
-/Basic <br>
-- [기초] 기초적인 파이썬 문법 연습장
+- ##Basic <br>
+  - [기초] 기초적인 파이썬 문법 연습장
 
-/Bruteforce <br>
-- [블랙잭]https://www.acmicpc.net/problem/2798 <br>
-- [분해합]https://www.acmicpc.net/problem/2231 <br>
-- [덩치] https://www.acmicpc.net/problem/7568 <br>
-- [체스판칠하기] https://www.acmicpc.net/problem/1018 <br>
-- [큰 수의 법칙] chapter 03, 93p. <br>
-- [숫자 카드 게임] chapter 03, 96p. <br>
-- [1이 될 때까지] chapter 03, 99p. <br>
+- ##Bruteforce
+  - [블랙잭]https://www.acmicpc.net/problem/2798 <br>
+  - [분해합]https://www.acmicpc.net/problem/2231 <br>
+  - [덩치] https://www.acmicpc.net/problem/7568 <br>
+  - [체스판칠하기] https://www.acmicpc.net/problem/1018 <br>
+  - [큰 수의 법칙] chapter 03, 93p. <br>
+  - [숫자 카드 게임] chapter 03, 96p. <br>
+  - [1이 될 때까지] chapter 03, 99p. <br>
 
-/Stack <br>
-- [스택] https://www.acmicpc.net/step/11 <br>
-- [괄호]https://www.acmicpc.net/problem/9012 <br>
+- ##Stack
+  - [스택] https://www.acmicpc.net/step/11 <br>
+  - [괄호]https://www.acmicpc.net/problem/9012 <br>
 
-/DynamicProgramming <br>
-- <참고자료> https://galid1.tistory.com/507 <br>
-- [가장긴바이토닉부분수열] https://www.acmicpc.net/problem/11054 <br>
-- [정수삼각형] https://www.acmicpc.net/problem/1932 <br>
+- ##DynamicProgramming <br>
+  - <참고자료> https://galid1.tistory.com/507 <br>
+  - [가장긴바이토닉부분수열] https://www.acmicpc.net/problem/11054 <br>
+  - [정수삼각형] https://www.acmicpc.net/problem/1932 <br>
 
-/Linked List <br>
-- [문제로풀어보는 알고리즘] 34p.
+- ##Linked List
+  - [문제로풀어보는 알고리즘] 34p.
 
-/Queue <br>
-- [요세푸스문제] https://www.acmicpc.net/problem/11866 <br>
-- [덱] https://www.acmicpc.net/problem/10866 <br>
+- ##Queue
+  - [요세푸스문제] https://www.acmicpc.net/problem/11866 <br>
+  - [덱] https://www.acmicpc.net/problem/10866 <br>
 
-/Divide&Conquer <br>
-- [종이의개수] https://www.acmicpc.net/problem/1780 <br>
-- [색종이만들기] https://www.acmicpc.net/problem/2630 <br>
+- ##Divide&Conquer
+  - [종이의개수] https://www.acmicpc.net/problem/1780 <br>
+  - [색종이만들기] https://www.acmicpc.net/problem/2630 <br>
 
-/BinaryTree <br>
-- [가장긴증가하는부분수열2] https://www.acmicpc.net/problem/12015 <br>
-- [트리순회] https://www.acmicpc.net/problem/1991
+- ##BinaryTree
+  - [가장긴증가하는부분수열2] https://www.acmicpc.net/problem/12015 <br>
+  - [트리순회] https://www.acmicpc.net/problem/1991
 
-/PriorityQueue <br>
-- [절대값힙] https://www.acmicpc.net/problem/11286 <br>
+- ##PriorityQueue
+  - [절대값힙] https://www.acmicpc.net/problem/11286 <br>
 
-/프로그래머스 <br>
-- Level1
-  - [Level1] https://programmers.co.kr/learn/courses/30/lessons/77484<br>
-  - [Level1] https://programmers.co.kr/learn/courses/30/lessons/72410<br>
-  - [Level1] https://programmers.co.kr/learn/courses/30/lessons/81301<br>
-  - [Level1] https://programmers.co.kr/learn/courses/30/lessons/67256<br>
-  - [Level1] https://programmers.co.kr/learn/courses/30/lessons/86051<br>
-  - [Level1] https://programmers.co.kr/learn/courses/30/lessons/17681<br>
-  - [Level1] https://programmers.co.kr/learn/courses/30/lessons/68644<br>
-  - [Level1] https://programmers.co.kr/learn/courses/30/lessons/86491<br>
-- Level2
-  - [Level2] https://programmers.co.kr/learn/courses/30/lessons/72411<br>
-  - [Level2] https://programmers.co.kr/learn/courses/30/lessons/62048<br>
-  - [Level2] https://programmers.co.kr/learn/courses/30/lessons/1844<br>
-  - [Level2] https://programmers.co.kr/learn/courses/30/lessons/49993<br>
-  - [Level2] https://programmers.co.kr/learn/courses/30/lessons/42885<br>
-  - [Level2] https://programmers.co.kr/learn/courses/30/lessons/70129<br>
-  - [Level2] https://programmers.co.kr/learn/courses/30/lessons/81302<br>
-  - [Level2] https://programmers.co.kr/learn/courses/30/lessons/42577<br>
-  - [Level2] https://programmers.co.kr/learn/courses/30/lessons/60058<br>
-  - [Level2] https://programmers.co.kr/learn/courses/30/lessons/42584<br>
-  - [Level2] https://programmers.co.kr/learn/courses/30/lessons/49994<br>
-  - [Level2] https://programmers.co.kr/learn/courses/30/lessons/43165<br>
-  - [Level2] https://programmers.co.kr/learn/courses/30/lessons/42586<br>
-  - [Level2] https://programmers.co.kr/learn/courses/30/lessons/42842<br>
-  - [Level2] https://programmers.co.kr/learn/courses/30/lessons/42888<br>
-- Level3
-  - [Level3]
-  - [Level3]
+- ##프로그래머스
+  - Level1
+    - [Level1] https://programmers.co.kr/learn/courses/30/lessons/77484<br>
+    - [Level1] https://programmers.co.kr/learn/courses/30/lessons/72410<br>
+    - [Level1] https://programmers.co.kr/learn/courses/30/lessons/81301<br>
+    - [Level1] https://programmers.co.kr/learn/courses/30/lessons/67256<br>
+    - [Level1] https://programmers.co.kr/learn/courses/30/lessons/86051<br>
+    - [Level1] https://programmers.co.kr/learn/courses/30/lessons/17681<br>
+    - [Level1] https://programmers.co.kr/learn/courses/30/lessons/68644<br>
+    - [Level1] https://programmers.co.kr/learn/courses/30/lessons/86491<br>
+  - Level2
+    - [Level2] https://programmers.co.kr/learn/courses/30/lessons/72411<br>
+    - [Level2] https://programmers.co.kr/learn/courses/30/lessons/62048<br>
+    - [Level2] https://programmers.co.kr/learn/courses/30/lessons/1844<br>
+    - [Level2] https://programmers.co.kr/learn/courses/30/lessons/49993<br>
+    - [Level2] https://programmers.co.kr/learn/courses/30/lessons/42885<br>
+    - [Level2] https://programmers.co.kr/learn/courses/30/lessons/70129<br>
+    - [Level2] https://programmers.co.kr/learn/courses/30/lessons/81302<br>
+    - [Level2] https://programmers.co.kr/learn/courses/30/lessons/42577<br>
+    - [Level2] https://programmers.co.kr/learn/courses/30/lessons/60058<br>
+    - [Level2] https://programmers.co.kr/learn/courses/30/lessons/42584<br>
+    - [Level2] https://programmers.co.kr/learn/courses/30/lessons/49994<br>
+    - [Level2] https://programmers.co.kr/learn/courses/30/lessons/43165<br>
+    - [Level2] https://programmers.co.kr/learn/courses/30/lessons/42586<br>
+    - [Level2] https://programmers.co.kr/learn/courses/30/lessons/42842<br>
+    - [Level2] https://programmers.co.kr/learn/courses/30/lessons/42888<br>
+  - Level3
+    - [Level3]
+    - [Level3]
