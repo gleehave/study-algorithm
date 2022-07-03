@@ -505,6 +505,7 @@ def Dijkstra(G, r):
     - [Level1] https://programmers.co.kr/learn/courses/30/lessons/17681<br>
     - [Level1] https://programmers.co.kr/learn/courses/30/lessons/68644<br>
     - [Level1] https://programmers.co.kr/learn/courses/30/lessons/86491<br>
+    - [Level1] https://programmers.co.kr/learn/courses/30/lessons/12903<br>
   - Level2
     - [Level2] https://programmers.co.kr/learn/courses/30/lessons/72411<br>
     - [Level2] https://programmers.co.kr/learn/courses/30/lessons/62048<br>
