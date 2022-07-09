@@ -681,3 +681,184 @@ class SLinkedList:
     - [Level3] https://school.programmers.co.kr/learn/courses/30/lessons/43162<br>
     - [Level3] https://school.programmers.co.kr/learn/courses/30/lessons/43164<br>
     - [Level3] https://school.programmers.co.kr/learn/courses/30/lessons/49189<br>
+  
+## SQL
+```
+DESC 테이블명; # 테이블 구조 조회
+SELECT * FROM sample;             # sample 테이블의 모든 열(column)의 레코드를 조회
+SELECT * FROM sample WHERE no=2;  # no이라는 열의 값이 2인 레코드를 조회
+SELECT * FROM sample WHERE no<>2; # no이라는 열의 값이 2가 아닌 레코드를 조회
+
+SELECT * FROM sample WHERE birthdaty IS NULL; # birthday의 열에서 NULL값인 레코드를 조회 
+# 주의! WHERE birthday = NULL 로는 NULL값을 검색할 수 없다.
+
+SELECT * FROM sample WHERE a<>0 AND b<>0;      # a열과 b열 모두 0이 아닌 레코드를 조회한다.
+SELECT * FROM sample WHERE a<>0 OR b<>0;       # a열이 0이 아니거나 b열이 0이 아닌 레코드를 조회한다.
+SELECT * FROM sample WHERE NOT (a<>0 OR b<>0); # a열이 0이 아니거나 b열이 0이 아닌 행을 제외한 레코드를 조회한다.
+
+no | text
+1  | SQL은 RDBMS를 조작하는 언어
+2  | LIKE는 apxkanswk %와 _를 사용할 수 있다.
+3  | LIKE는 SQL에서 사용할 수 있는 명령어이다.
+
+SELECT * FROM sample WHERE text LIKE 'SQL%';   # no 1의 레코드만 조회된다.
+SELECT * FROM sample WHERE text LIKE '%SQL%';  # no 1, 3의 레코드가 조회된다.
+SELECT * FROM sample WHERE text LIKE '%\%%';   # no  2의 레코드만 조회된다.
+
+SELECT * FROM sample ORDER BY no DESC        # 내림차순으로 정렬 3 2 1
+SELECT * FROM sample ORDER BY no ASC         # 오름차순으로 정렬 1 2 3
+SELECT * FROM sample ORDER BY a ASC, b DESC; # a열을 오름차순, b열을 내림차순으로 정렬된다.
+
+SELECT *, price * quantity AS amount FROM sample; # 모든 열의 레코드에 amount 열의 이름을 가진 열이 추가되어 조회된다.
+
+# WHERE에서 2000원 이상인 레코드만 조회된다.
+# 주의! WHERE -> SELECT 순서로 명령어가 처리 되므로,
+# 주의! WHERE에서 AS amount는 수행될 수 없다.
+SELECT *, price * quantity AS amount 
+FROM sample 
+WHERE price * quantity >= 2000; 
+
+# 주의! WHERE -> SELECT -> ORDER BY 순서로 처리 되므로,
+# ORDER BY에서는 AS amount 를 사용할 수 있다.
+SELECT *, price * quahtity AS amount 
+FROM sample 
+ORDER BY amount DESC;
+
+SELECT amount, ROUND(amount,1) as round FROM sample; # round열은 5961.6 의 형태로 반올림된다.
+SELECT amount, ROUND(amount,-1) as round FROM sample; # round열은 6000 의 형태로 반올림된다.
+
+no | price | quantity | unit
+1  | 100   | 10       | 개
+2  | 230   | 24       | 캔 
+3  | 134   | 30       | 장
+
+SELECT CONCAT(quantity, unit) FROM sample; # 10개 의 형태로 반환된다.
+
+SELECT CURRENT_TIMESTAMP; # 2014-01-01 10:10:30 의 형태로 시스템의 날짜를 반환한다.
+
+no
+1
+2
+NULL
+
+no   | a(null=0)
+1    |    1
+2    |    2
+NULL |    0
+
+SELECT no, 
+CASE 
+    WHEN no IS NULL THEN 0
+    ELSE no
+    END "a(null=0)"
+FROM sample;
+
+SELECT a, COLESCE(a,0) FROM sample; # NULL이 아닌 값은 a열의 값을 반환 (즉, 자기자신) NULL이면 0을 반환한다. COLESCE를 활용하면 좀 더 쉽게 변환 가능
+
+SELECT a AS "코드", 
+CASE
+    WHEN a = 1 THEN "남자",
+    WHEN a = 2 THEN "여자",
+    WHEN a IS NULL THEN "데이터 없음"
+    ELSE "미지정"
+    END AS "성별"
+FROM sample;
+
+# 주의! CASE를 사용할 경우
+# ELSE를 생략하면 ELSE NULL 간주된다.
+# CASE는 WHERE, ORDER BY, SELECT 등등 어디서나 사용 가능
+
+# 주의! NOT NULL 제약이 걸려있는 열(column)은 NULL값을 입력 할 수 없다.
+INSERT INTO sample VALUES(1, "abc", "2020-01-01");  # INSERT INTO 로 데이터 레코드를 추가할 수 있다.
+INSERT INTO sample(no, data) VALUES(1, "XYZ");      # 열을 지정하여 데이터를 추가할 수 있음.
+
+DELETE FROM sample WHERE no=3; # no열의 3의 값을 가진 레코드가 전부삭제된다.
+DELETE FROM sample WHERE no=1 OR no=2; # no열의 1 혹은 2의 값을 가진 레코드가 전부 삭제된다.
+
+no | a    | b
+1  | lee  | 2022-01-02
+2  | kim  | NULL
+
+no | a    | b
+1  | lee  | 2022-01-02
+2  | kim  | 2022-01-01
+
+# 주의! UPDATE 명령은 조건에 일치하는 모든 행이 대상이 되므로, WHERE를 생략한다면, b의 모든 열의 데이터값이 변경된다.
+UPDATE sample SET b="2022-01-01" WHERE no=2; 
+
+no | name  | quantity
+1  | lee   | 1
+2  | lee   | 2
+3  | kim   | 10
+4  | kum   | 3
+5  | NULL  | NULL
+
+SELECT COUNT(*) FROM sample;                  # 행의 개수를 구함 
+SELECT COUNT(*) FROM sample WHERE name='A';   # COUNT 집계함수는 무조건 1개의 값을 반환한다.
+SELECT * COUNT(no), COUNT(NAME) FROM sample;  # COUNT(no) 5 | COUNT(name) 4를 반환한다. 
+SELECT DISTINCT(name) FROM sample;            # name은 lee kim kum NULL 이 조회된다.
+SELECT COUNT(DISTINCT name) FROM sample;      # 중복을 제외한 뒤 개수를 반환한다.
+
+# NULL은 0으로 변환해서 평균값을 구할 수 있다.
+SELECT AVG(CASE WHEN quantity IS NULL THEN 0 ELSE quantity END) AS avgnull0 
+FROM sample; 
+
+name  | COUNT(name) | SUM(quantity)
+NULL  | 0           |   NULL
+lee   | 2           |   3
+kim   | 1           |   10
+kum   | 1           |   3
+
+SELECT name, COUNT(name), SUM(quantity) 
+FROM sample
+GROUP BY name;
+
+# 주의! WHERE -> GROUP BY -> SELECT -> ORDER BY 순서로 처리된다.
+# 주의! 만약 GROUP BY에 지정하지 않은 열(column)은 SELECT 에서 사용할 수 없다.
+    # 단, GROUP BY에서 지정하지 않더라도, SELECT 에서의 집계함수 (COUNT, MIN, MAX, AVG)는 사용할 수 있다.
+SELECT name, COUNT(name) FROM sample
+GROUP BY name
+HAVING COUNT(name)=1;
+
+SELECT MIN(no), name, SUM(quantity) FROM sample GROUP BY name; # 사용 가능!
+
+# 주의! 서브쿼리는 4가지 패턴으로 정리된다.
+# 1. 하나의 값을 반환하는 서브쿼리
+# 2. 복수의 행이면서 열이 1개인 서브쿼리
+# 3. 1개의 행이지만 복수의 열인 서브쿼리
+# 4. 복수의 행과 열을 반환하는 서브쿼리
+
+# 서브쿼리를 이용하여 최소값을 갖는 행을 삭제한다.
+DELETE FROM sample WHERE a=(SELECT MIN(a) FROM sample); 
+
+# 이러한 형태로 변수를 선언해서 구현할 수 있다.
+SET @a=(SELECT MIN(a) FROM sample);
+DELETE FROM sample WHERE a=@a; 
+
+# EXIST를 사용해 "있음"으로 sample1 테이블을 업데이트 한다.
+# 즉, sample1 과 sample2의 인덱스가 같은 sample1의 데이터를 업데이트 한다.
+UPDATE sample1 SET a="있음" 
+WHERE EXIST (SELECT * FROM sample2 WHERE b=a);
+
+a  |            |   b
+1  |            |   2
+2  |            |   10
+3  |            |   11 
+
+a  |
+1  |
+2  |
+3  |
+10 |
+11 |
+
+SELECT * FROM sample_a
+UNION
+SELECT * FROM ample_B;
+
+SELECT * FROM sample_x, sample_y; # 테이블 2개를 지정해 곱집합을 수행한다.
+
+SELECT * FROM 상품, 재고수 WHERE 상품.상품코드=재고수.상품코드;
+SELECT 상품.상품명, 재고수.재고수
+FROM 상품 INNER JOIN 재고수 ON 상품.상품코드=재고수.상품코드 WHERE 상품.상품분류='식료품';
+```
