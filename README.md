@@ -566,6 +566,44 @@ def quick_sort(array):
     return quick_sort(front_arr) + quick_sort(pivot_arr) + quick_sort(back_arr) 
 ```
 
+## 단일 연결 리스트
+```
+class SLinkedList:
+    def __init__(self):
+        self.head = None
+    
+    class Node:
+       def __init__(self, v, n=None):
+           self.value = v
+           self.next = n
+        
+    def insertNode(self, v): 
+        if self.head is None :
+            self.head = self.Node(v)
+        else:
+            self.head = self.Node(v,self.head)  
+    
+    def printNode(self):
+        if self.head is None:
+            print("저장된 데이터가 없음")
+            return
+        else:
+            print("<현재 리스트 구조>", end='\t') #end로 print 마지막 개행을 변경할 수 있습니다.
+            link = self.head #처음은 head를 지정. 이후부터는 현 노드의 next를 지정
+    
+            while link :
+                print(link.value, '->' , end = ' ')
+                link = link.next #link를 현 위치 노드의 next로 변경
+    
+    def deleteNode(self):
+        if self.head is None :
+            print("삭제할 노드가 없습니다.")
+            return
+        else:
+            #head를 현 head의 next. 즉, 다음 노드로 변경.
+            self.head = self.head.next            
+```
+
 ## Basic <br>
   - [기초] 기초적인 파이썬 문법 연습장
 
