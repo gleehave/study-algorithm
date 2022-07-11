@@ -483,6 +483,34 @@ def Dijkstra(G, r):
         P[v] = minIndex
 ```
 
+## Two Pointer
+- 리스트에 순차적으로 접근해야 할 때, 2개의 위치(index)를 기록하면서 처리하는 알고리즘
+- 시작점과 끝점으로 데이터를 접근한다.
+```
+1. 시작점(start)과 끝점(end)이 첫 번째 원소의 인덱스(0)을 가리킨다.
+2. 현재 부분 합이 M과 같다면 혹은 문제의 요구하는 조건이 맞다면 count += 1
+3. 현재 부분 합이 M보다 작다면 혹은 문제의 요구 조건이 아니면 end += 1
+4. 현재 부분 합이 M보다 크다면 혹은 문제의 요구 조건이 아니면 start += 1
+5. 모든 경우 확인 (2~4번 과정 반복)
+
+n = 5
+m = 5
+data = [1,2,3,4,5]
+
+count = 0
+interval_sum = 0
+end = 0
+
+for start in range(n):
+    while interval_sum < m and end < n:
+        interval_sum += data[end]
+        end += 1
+    if interval_sum == m:
+        count += 1
+
+    interval_sum -= data[start]
+```
+
 ## 버블정렬
 ```
 array = [9, 8, 7, 6, 5, 4, 3, 2, 1]
