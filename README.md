@@ -131,7 +131,44 @@ https://programmers.co.kr/ <br>
   graph[0].append((0, 5))
   # [[(1,7), (2,5)], [(0, 7)], [(0, 5)]]
   ```
+- Hash: 임의 값을 고정 길이로 변환하는 것
+  - Hash Table: Key의 연산에 의해 직접 접근이 가능한 데이터 구조
+  - Hashing Function: Key에 대해 산술 연산을 이용해 데이터 위치를 찾을 수 있는 함수
+  - Hash Value 혹은 Hash Address: Key를 Hash Function으로 연산해서 Hash값을 찾는다.
+```
+# 1명을 제외하고, 모든 선수가 마라톤을 완주하였다.
 
+# participant에는 참여 선수의 이름들이 있다.
+# completion에는 완주한 이름이 들어있다.
+# 동명이인이 있을 수 있다.
+
+# 이때, 완주하지 못한 선수의 이름을 return
+
+participant = ["leo", "kiki", "eden"]
+completion = ["eden", "kiki"]
+
+def solution(participant, completion):
+    hashDict = {}
+    sumHash = 0
+
+    for runner in participant:
+        hashDict[hash(runner)] = runner
+        sumHash += hash(runner)
+        print('hashDict:', hashDict)
+        print('sumHash:', sumHash)
+
+    for complet in completion:
+        sumHash -= hash(complet)
+
+    return hashDict[sumHash]
+
+hashDict: {-6143320655215766076: 'leo'}
+sumHash: -6143320655215766076
+hashDict: {-6143320655215766076: 'leo', 5916745155779834239: 'kiki'}
+sumHash: -226575499435931837
+hashDict: {-6143320655215766076: 'leo', 5916745155779834239: 'kiki', -246362839500609689: 'eden'}
+sumHash: -472938338936541526
+```
 ## Stack
 ```
 stack = []
@@ -686,6 +723,7 @@ class SLinkedList:
     - [Level1] https://programmers.co.kr/learn/courses/30/lessons/76501<br>
     - [Level1] https://school.programmers.co.kr/learn/courses/30/lessons/42840<br>
     - [Level1] https://school.programmers.co.kr/learn/courses/30/lessons/42862<br>
+    - [Level1] https://school.programmers.co.kr/learn/courses/30/lessons/42576<br>
   - Level2
     - [Level2] https://programmers.co.kr/learn/courses/30/lessons/72411<br>
     - [Level2] https://programmers.co.kr/learn/courses/30/lessons/62048<br>
