@@ -748,6 +748,7 @@ class SLinkedList:
     - [Level2] https://school.programmers.co.kr/learn/courses/30/lessons/42747<br>
     - [Level2] https://school.programmers.co.kr/learn/courses/30/lessons/84512<br>
     - [Level2] https://school.programmers.co.kr/learn/courses/30/lessons/42583<br>
+    - [Level2] https://school.programmers.co.kr/learn/courses/30/lessons/12913<br>
   - Level3
     - [Level3] https://school.programmers.co.kr/learn/courses/30/lessons/43163<br>
     - [Level3] https://school.programmers.co.kr/learn/courses/30/lessons/43162<br>
