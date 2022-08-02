@@ -937,3 +937,5 @@ SELECT * FROM 상품, 재고수 WHERE 상품.상품코드=재고수.상품코드
 SELECT 상품.상품명, 재고수.재고수
 FROM 상품 INNER JOIN 재고수 ON 상품.상품코드=재고수.상품코드 WHERE 상품.상품분류='식료품';
 ```
+
+Updated Date: 2022.08.02(화)
